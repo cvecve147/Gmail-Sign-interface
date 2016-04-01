@@ -3,19 +3,26 @@
 	padding:0;
 	font-family: arial;
 }
-.google ,.google2{
+.google {
 	text-align:center;
 	margin: 50px;
 }
-.google2{
-	display:none;
+.sublime{
+	background-color: #357ae8;
+	color:#fff;
+	width:200px;
+	font-size:14px;
 }
-.google img ,.google2 img{
+.google img {
 	width:300px;
 	height:101px;
 }
-.google h1 ,.google2 h1{
+.google h1{
 	margin:20px;
+}
+input{
+	width: 274px; 
+	padding: 4.9px;
 }
 .test img{
 	width:120px;
@@ -53,6 +60,10 @@
      	padding:0;
      	margin:0 auto;
      }
+     input{
+     	width:200px;
+     }
+
 }
 @media screen and (min-width: 300px) and (max-width:385px){
      .google img{
@@ -63,9 +74,8 @@
      	width:100px;
      	height:85px;
      	margin:15px;
-     }
+     }     
      .test{
      	margin-left: -22px;
      }	
-    
 }
